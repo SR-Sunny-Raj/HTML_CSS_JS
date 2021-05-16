@@ -1,0 +1,19 @@
+p,
+a {
+  color: orangered;
+}
+li {
+  list-style-type: square;
+}
+li.special,
+em.special {
+  color: teal;
+  font-weight: bold;
+}
+li em {
+  color: rebeccapurple;
+}
+a:hover {
+  color: purple;
+  text-decoration: none;
+}
