@@ -1,0 +1,15 @@
+table,
+th,
+tr,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  border-spacing: 5px;
+}
+th {
+  background-color: tomato;
+}
+td {
+  background-color: cornflowerblue;
+}

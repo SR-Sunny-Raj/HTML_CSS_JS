@@ -46,3 +46,11 @@ footer {
   background-color: black;
   overflow: hidden;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.connect {
+  text-align: center;
+}
