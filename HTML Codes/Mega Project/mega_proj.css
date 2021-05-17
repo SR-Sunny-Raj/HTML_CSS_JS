@@ -1,0 +1,48 @@
+h1 {
+  text-align: center;
+  font-style: normal;
+  font-family: cursive;
+  font-weight: bold;
+  background-color: tomato;
+  padding: 30px;
+}
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  float: left;
+}
+nav {
+  background-color: black;
+  overflow: hidden;
+}
+nav a:hover {
+  color: tomato;
+}
+nav a:visited {
+  color: royalblue;
+}
+h3 {
+  text-align: center;
+  background-color: cornflowerblue;
+  padding: 20px;
+  font-family: serif;
+}
+h4 {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  float: left;
+}
+footer a:hover {
+  text-decoration: none;
+  color: tomato;
+}
+footer {
+  background-color: black;
+  overflow: hidden;
+}
