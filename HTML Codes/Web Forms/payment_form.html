@@ -4,29 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Payment Form</title>
   </head>
   <body>
+    <div class="container">
     <form action="">
-      <h1>Payment Form</h1>
+      <h1 class="main_heading">Payment Form</h1>
+      <hr>
       <p>Required Fields are followed by *</p>
-      <h2>Contact Information</h2>
-      <p>Name * : <input type="text" name="name" required /></p>
+      <h2>User Information</h2>
+      <p>Name * : <input type="text" name="name" placeholder="Enter Your Name" required /></p>
       <fieldset>
         <legend>Gender *</legend>
-        <p>
-          Male : <input type="radio" name="Gender" id="male" required /> Female
-          :
-          <input type="radio" name="Gender" id="female" required />
-        </p>
+          Male : <input type="radio" name="Gender" id="male" required />
+          Female : <input type="radio" name="Gender" id="female" required />
       </fieldset>
       <p>
         Address :
-        <textarea name="address" id="address" cols="70" rows="7"></textarea>
+        <textarea name="address" id="address" cols="70" rows="7" ></textarea>
       </p>
-      <p>Email * : <input type="email" name="email" id="email" required /></p>
+      <p>Email * : <input type="email" name="email" id="email" required placeholder="Eg. xyz@gmail.com" /></p>
       <p>
-        Pincode * : <input type="number" name="pincode" id="pincode" required />
+        Pincode * : <input type="number" name="pincode" id="pincode" required placeholder="Eg. 123456" />
       </p>
       <hr />
       <h2>Payment Information</h2>
@@ -41,7 +41,7 @@
       </p>
       <p>
         Card Number * :
-        <input type="number" name="card_number" id="card_number" required />
+        <input type="number" name="card_number" id="card_number" placeholder="Eg. 16-digit number" required />
       </p>
       <p>
         Expiration Date * :
@@ -54,12 +54,13 @@
       </p>
       <p>
         CVV * :
-        <input type="password" name="cvv" id="cvv" required />
+        <input type="password" name="cvv" id="cvv" placeholder="Eg. 123" required />
       </p>
       <p>
-        <input type="submit" name="submit" value="Pay Now" />
-        <input type="reset" value="Reset" />
+        <input type="submit" name="submit" value="Pay Now" /><br>
+        <input type="reset" name="reset" value="Reset" />
       </p>
     </form>
   </body>
+</div>
 </html>
