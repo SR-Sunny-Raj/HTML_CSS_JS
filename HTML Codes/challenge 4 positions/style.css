@@ -1,0 +1,41 @@
+.header {
+  padding-bottom: 1px;
+  background-color: crimson;
+}
+.special {
+  padding: 120px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 45px;
+  color: white;
+}
+.nav {
+  background-color: rgb(46, 46, 46);
+  font-size: 17px;
+  padding: 25px 75px 25px 75px;
+  word-spacing: 35px;
+  position: sticky;
+  top: 0px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  color: tomato;
+}
+/* .nav a:visited {
+  color: rebeccapurple;
+} */
+.body {
+  padding: 40px 75px 50px 75px;
+  font-family: cursive;
+}
+.body p {
+  font-size: 17px;
+}
+.first,
+.second,
+.third {
+  padding-top: 50px;
+}
