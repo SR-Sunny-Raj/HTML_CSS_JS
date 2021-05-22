@@ -1,0 +1,83 @@
+body {
+  background-color: lightgoldenrodyellow;
+}
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20% 63% 14%;
+  grid-template-rows: 15% 70% 10%;
+  grid-gap: 20px;
+  font-family: cursive;
+}
+#box-1 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+#box-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-left: 280px;
+  background-color: lightseagreen;
+  border-radius: 7px;
+  box-shadow: 3px 3px 2px #ccc;
+}
+#box-3 {
+  font-family: cursive;
+  font-size: 18;
+  word-spacing: 7px;
+  padding: 0 15px 0 15px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: tomato;
+}
+#box-5 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: teal;
+  border-radius: 7px;
+  box-shadow: 3px 3px 2px #ccc;
+}
+.n1 {
+  display: grid;
+  width: 80%;
+  text-align: center;
+  padding: 50px 0 0 30px;
+  grid-template-rows: repeat(5, 50px);
+  row-gap: 10px;
+}
+.n1 > a {
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 100px;
+  background-color: orange;
+  color: white;
+}
+.n1 > a:hover {
+  background-color: orangered;
+}
+.n2 {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-gap: 20px;
+  padding: 25px 0 0 25px;
+  text-align: center;
+}
+.n2 > a {
+  color: white;
+}
+.n2 > .a2 {
+  padding-right: 40px;
+}
+.n2 > a:hover {
+  color: orangered;
+}
+#box-4 > img {
+  width: 100%;
+  height: 50%;
+}
