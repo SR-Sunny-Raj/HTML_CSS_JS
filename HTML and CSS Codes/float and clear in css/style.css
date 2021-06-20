@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: orangered;
+  padding: 3px 220px;
+}
+h3 {
+  color: red;
+}
+.container {
+  background-color: rgb(255, 186, 59);
+  border: 5px solid red;
+  width: 800px;
+  margin: 33px auto;
+}
+.items {
+  background-color: pink;
+  border: 2px solid rgb(245, 107, 107);
+  margin: 15px 13px;
+  padding: 5px 8px;
+}
+#fruit {
+  float: left;
+  width: 46%;
+}
+#Computer {
+  float: left;
+  width: 46%;
+}
+#Stationary {
+  clear: left;
+  width: 100%;
+  margin: auto;
+}
+#Groceries {
+  clear: left;
+  width: 100%;
+}
+body {
+  font-family: cursive;
+  text-align: justify;
+}
