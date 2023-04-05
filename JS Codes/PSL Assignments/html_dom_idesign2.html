@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script type="text/javascript">
+             function validate()
+             {
+                  //Fill code here
+                  if(checkPhoneNumber()==true && checkCardNumber()==true){
+                      document.getElementById("success").innerHTML="Details stored in database";
+                  }else{
+                    document.getElementById("success").innerHTML="";
+                  }
+             }
+             function checkPhoneNumber()
+             {
+                 var value = document.getElementById("phoneNumber").value;
+                 var warning = document.getElementById("phoneNumber_Warning");
+
+                 if(isNaN(value)){
+                     warning.innerHTML="Phone number must contains only digits";
+                     return false;
+                 }else if(value.length!=10){
+                     warning.innerHTML="Phone Number must be 10 digits";
+                     return false;
+                 }else{
+                     warning.innerHTML="";
+                     return true;
+                 }
+                
+             }
+             function checkCardNumber()
+             {
+                 var value = document.getElementById("cardNumber").value;
+                 var warning = document.getElementById("cardNumber_Warning");
+
+                 if(isNaN(value)){
+                     warning.innerHTML="Card number must contains only digits";
+                     return false;
+                 }else if(value.length!=16){
+                     warning.innerHTML="Phone Number must be 16 digits";
+                     return false;
+                 }else{
+                     warning.innerHTML="";
+                     return true;
+                 }
+               
+             }
+    	 </script>
+	</head>
+	<body>
+        <h3>Phone Number & Card Validation</h3>
+        Enter your Phone Number:<input type="text" id="phoneNumber" onkeydown="checkPhoneNumber()">
+        <div id="phoneNumber_Warning"></div></br>
+        
+        Enter your Card Number:<input type="text" id="cardNumber" onkeydown="checkCardNumber()">
+        <div id="cardNumber_Warning"></div></br>
+
+        <button type="button" id="validate" onclick="validate()">Validate</button>
+       <div id="success"></div>
+	</body>
+</html>
+

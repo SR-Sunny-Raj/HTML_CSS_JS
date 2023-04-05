@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function displayContent() {
+        var val = document.getElementById('myContent').value;
+        var ans = 'Typed text is : ' + val;
+        document.getElementById('result').innerHTML = ans;
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h3>Oninput Event</h3>
+      <textarea id="myContent" oninput="displayContent()"></textarea>
+      <div id="result"></div>
+    </center>
+  </body>
+</html>
