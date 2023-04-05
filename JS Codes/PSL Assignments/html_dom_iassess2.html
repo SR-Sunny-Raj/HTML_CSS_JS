@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script></script>
+    <script>
+      function addSize() {
+        var val = document.getElementById('myDiv');
+
+        var sizeW = getComputedStyle(val).width;
+        var sizeH = getComputedStyle(val).height;
+
+        val.style.width = parseInt(sizeW) + 10 + 'px';
+        val.style.height = parseInt(sizeH) + 10 + 'px';
+      }
+    </script>
   </head>
-  <!-- fill your code here-->
+  <body>
+    <h1>Increase width and height of div</h1>
+    <div id="myDiv" style="width: 400px; height: 200px" ondblclick="addSize()">
+      <h3>Pink frag Event Organization</h3>
+      Our events team handles all your requirements from conceptualization to
+      execution, leaving you free to focus completely on achieving your
+      objectives.With proper planning and logistics management and the ability
+      to activate requisite resources, we have undertaken a wide variety of
+      projects.
+    </div>
+  </body>
 </html>
