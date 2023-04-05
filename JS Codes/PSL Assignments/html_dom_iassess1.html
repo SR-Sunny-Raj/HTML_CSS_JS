@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <h1>Grade Sheet</h1>
+    Marks <input type="text" id="mark" name="mark" />
+    <button id="submit" name="submit" onclick="myFunction()">submit</button>
+    <div id="result"></div>
+  </body>
+  <script>
+    function myFunction() {
+      var val = parseInt(document.getElementById('mark').value);
+      var ans;
+      if (val == 100) {
+        ans = 'A+';
+      } else if (val >= 90 && val <= 99) {
+        ans = 'A';
+      } else if (val >= 80 && val <= 89) {
+        ans = 'B';
+      } else if (val >= 70 && val <= 79) {
+        ans = 'C';
+      } else if (val >= 60 && val <= 69) {
+        ans = 'D';
+      } else if (val >= 50 && val <= 59) {
+        ans = 'E';
+      } else {
+        ans = 'RA';
+      }
+      document.getElementById('result').innerHTML =
+        'Grade obtained by the student is : ' + ans;
+    }
+  </script>
+</html>
