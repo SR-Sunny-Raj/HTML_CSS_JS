@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'icon';
+  src:
+    url('../fonts/icon.ttf?lpif7x') format('truetype'),
+    url('../fonts/icon.woff?lpif7x') format('woff'),
+    url('../fonts/icon.svg?lpif7x#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wishlist:before {
+  content: "\e900";
+}
+.icon-search:before {
+  content: "\e901";
+}
+.icon-cart:before {
+  content: "\e902";
+}
+.icon-alert:before {
+  content: "\e903";
+}
+.icon-fill-star:before {
+  content: "\e904";
+}
+.icon-star:before {
+  content: "\e905";
+}
+.icon-fill-wishlist:before {
+  content: "\e906";
+}
